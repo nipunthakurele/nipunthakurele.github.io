@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://nipunthakurele.github.io/nipunthakurele/sitemap.xml
