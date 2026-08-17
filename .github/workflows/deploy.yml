@@ -5,6 +5,7 @@ on:
     branches:
       - master
       - main
+      - migrate-to-v1
     paths:
       - "assets/**"
       - "**.bib"
