@@ -6,10 +6,9 @@ subtitle: PhD Student, NYU Stern School of Business
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: nipun_profile.png
   image_circular: false 
-  more_info: >
-    <p>New York, NY</p>
+  more_info:
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
