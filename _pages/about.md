@@ -502,3 +502,33 @@ document.addEventListener("DOMContentLoaded", function () {
   border-bottom: none !important;
 }
 </style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".navbar-nav .nav-link").forEach(function (link) {
+    const label = link.textContent.trim().toLowerCase();
+
+    if (!["about", "research", "teaching"].includes(label)) return;
+
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+
+      if (label === "about") {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      } else {
+        const target = document.getElementById(label);
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }
+
+      history.replaceState(null, "", "/");
+    });
+  });
+
+  /* Remove an existing section hash after loading */
+  if (window.location.hash === "#research" || window.location.hash === "#teaching") {
+    history.replaceState(null, "", "/");
+  }
+});
+</script>
