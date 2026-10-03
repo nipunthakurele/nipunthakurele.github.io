@@ -444,3 +444,39 @@ document.addEventListener("DOMContentLoaded", function () {
   updateActiveSection();
 });
 </script>
+
+<style>
+@media (max-width: 576px) {
+  .profile {
+    width: 78% !important;
+    max-width: 300px;
+    float: none !important;
+    margin: 0 auto 1.5rem auto !important;
+  }
+
+  .profile img {
+    width: 100% !important;
+  }
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const menu = document.querySelector(".navbar-collapse");
+  const toggler = document.querySelector(".navbar-toggler");
+
+  document.querySelectorAll(".navbar-collapse .nav-link").forEach(function (link) {
+    link.addEventListener("click", function () {
+      if (menu && menu.classList.contains("show")) {
+        if (window.bootstrap && window.bootstrap.Collapse) {
+          bootstrap.Collapse.getOrCreateInstance(menu, {
+            toggle: false
+          }).hide();
+        } else if (toggler) {
+          toggler.click();
+        }
+      }
+    });
+  });
+});
+</script>
