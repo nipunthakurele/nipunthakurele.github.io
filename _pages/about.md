@@ -532,3 +532,26 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 </script>
+
+<script>
+document.addEventListener("click", function (event) {
+  const link = event.target.closest("a");
+  if (!link) return;
+
+  const url = new URL(link.href, window.location.href);
+
+  if (url.hash !== "#research" && url.hash !== "#teaching") return;
+
+  event.preventDefault();
+
+  const target = document.querySelector(url.hash);
+  if (target) {
+    target.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+  }
+
+  history.replaceState(null, "", "/");
+}, true);
+</script>
