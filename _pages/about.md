@@ -62,4 +62,4 @@ NYU Stern School of Business, Fall 2026
 <div style="margin-top: 1rem;"></div>
 
 **Instructor — Operations Management (UG Course)**  
-Winter 2025
+NYU Stern School of Business, Winter 2025
