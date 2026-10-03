@@ -102,11 +102,15 @@ nav_order: 2
 .research-section-title {
   font-size: 1.75rem;
   font-weight: 700;
-  margin-bottom: 2.2rem;
+  margin-bottom: 1.1rem;
 }
 
 .research-paper {
-  margin-bottom: 3.5rem;
+  margin-bottom: 0;
+}
+
+.research-paper + .research-paper {
+  margin-top: 1.8rem;
 }
 
 .research-paper-title {
@@ -267,8 +271,6 @@ nav_order: 2
     </p>
 
   </div>
-
-  <hr class="research-divider">
 
   <div class="research-paper">
 
