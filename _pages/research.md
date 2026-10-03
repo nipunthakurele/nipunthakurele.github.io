@@ -147,7 +147,7 @@ nav_order: 2
   <div class="research-card">
     <div class="research-card-image-wrap">
       <img
-        src="/assets/img/research/buy_box_image_detailed.webp"
+        src="/assets/img/research/theme1_buybox.png"
         alt="Amazon Buy Box and competing sellers"
         class="research-card-image">
     </div>
@@ -175,7 +175,7 @@ nav_order: 2
   <div class="research-card">
     <div class="research-card-image-wrap">
       <img
-        src="/assets/img/research/data_safety_image.png"
+        src="/assets/img/research/theme2_datasafety.png"
         alt="Google Play Data Safety disclosure"
         class="research-card-image">
     </div>
@@ -203,7 +203,7 @@ nav_order: 2
   <div class="research-card">
     <div class="research-card-image-wrap">
       <img
-        src="/assets/img/research/muse_stroller_image.png"
+        src="/assets/img/research/theme3_muse.png"
         alt="Meta Muse shopping agent interface"
         class="research-card-image">
     </div>
