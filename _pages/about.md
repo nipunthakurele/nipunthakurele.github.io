@@ -310,8 +310,9 @@ Methodologically, I primarily use game-theoretic models grounded in real institu
       <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7294419"
          target="_blank"
          rel="noopener noreferrer"
-         style="text-decoration: none; color: var(--global-theme-color); font-weight: 700;">
-        SSRN
+         title="SSRN"
+         style="text-decoration: none; color: var(--global-theme-color);">
+        <i class="ai ai-ssrn" style="font-size: 1.35em; vertical-align: -0.08em;"></i>
       </a>
     </div>
 
