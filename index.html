@@ -180,36 +180,39 @@ document.addEventListener("DOMContentLoaded", function () {
     return null;
   }
 
-  /* Make Research and Teaching direct same-page links */
+  /* Convert Research and Teaching to direct same-page links */
   navLinks.forEach(function (link) {
     const section = sectionForLink(link);
 
-    if (section === "research") {
-      link.href = "/#research";
-    }
-
-    if (section === "teaching") {
-      link.href = "/#teaching";
-    }
+    if (section === "research") link.href = "/#research";
+    if (section === "teaching") link.href = "/#teaching";
   });
 
   function setActive(section) {
     navLinks.forEach(function (link) {
-      const active = sectionForLink(link) === section;
+      const item = link.closest(".nav-item");
 
-      link.classList.toggle("active", active);
+      link.classList.remove("active");
+      link.removeAttribute("aria-current");
 
-      if (active) {
-        link.setAttribute("aria-current", "page");
-      } else {
-        link.removeAttribute("aria-current");
-      }
+      if (item) item.classList.remove("active");
     });
+
+    const activeLink = navLinks.find(
+      link => sectionForLink(link) === section
+    );
+
+    if (activeLink) {
+      const item = activeLink.closest(".nav-item");
+
+      if (item) item.classList.add("active");
+      activeLink.setAttribute("aria-current", "page");
+    }
   }
 
   function updateActiveSection() {
-    const offset = 180;
-    const position = window.scrollY + offset;
+    const position =
+      window.scrollY + Math.min(window.innerHeight * 0.3, 220);
 
     if (position >= teaching.offsetTop) {
       setActive("teaching");
