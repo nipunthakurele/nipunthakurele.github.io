@@ -11,9 +11,9 @@ profile:
   image_style: "box-shadow: none; border: none;"
   more_info: >
     <div style="text-align: center; margin-top: 0.7rem; font-size: 0.9rem;">
-      <a href="/assets/pdf/Nipun_Thakurele_CV_10_3_2026.pdf # path to your CV PDF file" target="_blank">CV</a>
+      <a href="{{ site.data.socials.cv_pdf | relative_url }}" target="_blank">CV</a>
       <span style="margin: 0 0.45rem;">·</span>
-      <a href="mailto:nt2328@stern.nyu.edu # your email address">Email</a>
+      <a href="mailto:{{ site.data.socials.email }}">Email</a>
     </div>
 
 selected_papers: false
