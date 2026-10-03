@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: PhD Candidate, NYU Stern School of Business
 
@@ -26,24 +26,40 @@ My research studies how information and visibility are controlled in digital mar
 
 Methodologically, I primarily use game-theoretic models grounded in real institutional settings, complemented by empirical analysis where appropriate.
 
-<br>
+<br><br>
 
-## Research
+## **Research**
 
-### Working Papers
+<div style="margin-top: 1.4rem;"></div>
+
+### **Working Papers**
 
 **Buy Box and Price Parity: Competitive Effects and Consumer Welfare in Online Marketplaces**  
 with Lauren X. Lu and Wenqiang Xiao  
-*Under review at Manufacturing & Service Operations Management*
+*Under review at Manufacturing & Service Operations Management*  
+[SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7294419)
 
-[View all research →](/research/)
+<div style="margin-top: 1.5rem;"></div>
 
-<br>
+**Buy Box Allocation and Competitive Effects in Hybrid Marketplaces**  
+with Haotian Song and Wenqiang Xiao  
+*Major Revision at Production and Operations Management*
 
-## Recent Teaching
+<br><br>
 
-**[Most Recent Course]**  
-[Role], NYU Stern School of Business, [Semester / Year]
+## **Recent Teaching**
 
-**[Second Most Recent Course]**  
-[Role], NYU Stern School of Business, [Semester / Year]
+<div style="margin-top: 1.25rem;"></div>
+
+**Teaching Fellow — Foundations of AI Agents**  
+NYU Stern School of Business, Fall 2026
+
+<div style="margin-top: 1rem;"></div>
+
+**Teaching Assistant — Operations Management (MBA)**  
+NYU Stern School of Business, Fall 2026
+
+<div style="margin-top: 1rem;"></div>
+
+**Instructor — Operations Management (UG Course)**  
+Winter 2025
