@@ -256,10 +256,8 @@ nav_order: 2
       Under review at Manufacturing &amp; Service Operations Management
     </div>
 
-    <div class="research-paper-abstract-label">Abstract</div>
-
     <p>
-      [Insert abstract here.]
+      Online marketplaces can condition prominent seller visibility, as in Amazon’s Buy Box, on whether sellers keep their prices no higher than on rival platforms, creating an implicit price-parity rule. How such a rule affects competition and consumer welfare when sellers can choose whether to comply is an important question. We find that its effects depend critically on seller response and market structure, and need not be uniformly harmful to consumers.
     </p>
 
     <p>
@@ -286,10 +284,8 @@ nav_order: 2
       Major Revision at Production and Operations Management
     </div>
 
-    <div class="research-paper-abstract-label">Abstract</div>
-
     <p>
-      [Insert abstract here.]
+      Online platforms often use featured placement to direct consumer attention toward selected offers, as in Amazon’s Buy Box. In hybrid marketplaces, where the platform also competes as a retailer, how price-based visibility affects competition is less clear. We find that price-contingent featured placement can either intensify or soften price competition depending on market conditions, and can reduce both firm profits and consumer welfare despite increasing demand.
     </p>
 
   </div>
@@ -303,16 +299,12 @@ nav_order: 2
   <div class="research-paper">
 
     <div class="research-paper-title">
-      [Project Title]
+      Privacy Labels and Platform Mandated Transparency
     </div>
 
     <div class="research-paper-meta">
-      with [Coauthor(s), if applicable]
+      with Raveesh Mayya
     </div>
-
-    <p>
-      [Insert project description or abstract here.]
-    </p>
 
   </div>
 
