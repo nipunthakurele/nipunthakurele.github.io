@@ -197,7 +197,7 @@ Methodologically, I primarily use game-theoretic models grounded in real institu
 }
 </style>
 
-<h2 id="research" style="scroll-margin-top: 6rem; margin-top: 3.5rem;">Research</h2>
+<h2 id="research" style="scroll-margin-top: 6rem; margin-top: 2.5rem;">Research</h2>
 
 <div class="research-kicker">Research Agenda</div>
 
@@ -310,10 +310,8 @@ Methodologically, I primarily use game-theoretic models grounded in real institu
       <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7294419"
          target="_blank"
          rel="noopener noreferrer"
-         aria-label="SSRN"
-         title="SSRN"
-         style="text-decoration: none; font-size: 1.2em; font-weight: 700; vertical-align: -0.08em;">
-        <i class="ai ai-ssrn"></i>
+         style="text-decoration: none; color: var(--global-theme-color); font-weight: 700;">
+        SSRN
       </a>
     </div>
 
