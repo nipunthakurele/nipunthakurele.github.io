@@ -5,22 +5,37 @@
 </style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://nipunthakurele.github.io/research/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
     initTheme();
   </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Nipun Thakurele </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">About </a> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Research</h1> <p class="post-description"></p> </header> <article> <style>
-.research-intro {
-  margin-bottom: 2.5rem;
+.research-kicker {
+  margin-top: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--global-theme-color);
+}
+
+.research-headline {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.4rem;
+  line-height: 1.15;
+  font-weight: 700;
+  margin-bottom: 2.4rem;
 }
 
 .research-theme-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.25rem;
-  margin: 2rem 0 3.5rem 0;
+  gap: 1.5rem;
+  margin-bottom: 4.5rem;
 }
 
 .research-card {
-  border: 1px solid rgba(127, 127, 127, 0.28);
-  border-radius: 10px;
-  padding: 1.35rem;
-  height: 100%;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 22px;
+  padding: 1.5rem;
+  background: var(--global-bg-color);
+  min-height: 100%;
 }
 
 .research-card-image-wrap {
@@ -28,57 +43,96 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.45rem;
 }
 
 .research-card-image {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  border-radius: 7px;
 }
 
 .research-image-source {
-  font-size: 0.68rem;
-  opacity: 0.6;
-  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 0.72rem;
+  font-style: italic;
+  opacity: 0.65;
+  margin-bottom: 1.4rem;
 }
 
 .research-card-label {
-  font-size: 0.72rem;
-  letter-spacing: 0.08em;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-bottom: 0.45rem;
-  opacity: 0.65;
+  color: var(--global-theme-color);
+  margin-bottom: 0.55rem;
 }
 
-.research-card h3 {
-  font-size: 1.08rem;
-  line-height: 1.3;
-  margin: 0 0 0.75rem 0;
+.research-card-title {
+  font-size: 1.18rem;
+  line-height: 1.35;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
 }
 
-.research-card p {
-  font-size: 0.93rem;
-  line-height: 1.55;
-  margin-bottom: 0;
+.research-card-text {
+  font-size: 0.96rem;
+  line-height: 1.6;
+  margin: 0;
 }
 
 .research-section {
-  margin-top: 3.5rem;
+  margin-top: 4rem;
+}
+
+.research-section-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 2.2rem;
 }
 
 .research-paper {
-  margin-top: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 3.5rem;
+}
+
+.research-paper-title {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+
+.research-paper-meta {
+  margin-bottom: 0.45rem;
+}
+
+.research-paper-status {
+  font-style: italic;
+  margin-bottom: 1.4rem;
+}
+
+.research-paper-abstract-label {
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.research-divider {
+  border: 0;
+  border-top: 1px solid var(--global-divider-color);
+  margin: 3rem 0;
 }
 
 @media (max-width: 800px) {
   .research-theme-grid {
     grid-template-columns: 1fr;
   }
+
+  .research-headline {
+    font-size: 2rem;
+  }
 }
-</style> <div class="research-intro"> My research studies how information and visibility are controlled in digital markets, and how that control shapes competition, firm strategy, and consumer welfare. ### Who controls information in digital markets? </div> <div class="research-theme-grid"> <div class="research-card"> <div class="research-card-image-wrap"> <img src="/assets/img/research/buy_box_image_detailed.webp" alt="Amazon Buy Box and competing sellers" class="research-card-image"> </div> <div class="research-image-source"> Source: <a href="https://metricscart.com/wp/wp-content/uploads/2023/05/what-is-a-buy-box.webp" target="_blank" rel="external nofollow noopener">MetricsCart</a> </div> <div class="research-card-label">Theme 1</div> <h3>Algorithmic Visibility &amp; Platform Competition</h3> <p> How platform rules and algorithmic ranking determine seller visibility and reshape competition within and across marketplaces. </p> </div> <div class="research-card"> <div class="research-card-image-wrap"> <img src="/assets/img/research/data_safety_image.png" alt="Google Play Data Safety disclosure" class="research-card-image"> </div> <div class="research-image-source"> Source: <a href="https://support.google.com/googleplay/android-developer/answer/10787469?hl=en" target="_blank" rel="external nofollow noopener">Google Play</a> </div> <div class="research-card-label">Theme 2</div> <h3>Mandated Disclosure &amp; Strategic Transparency</h3> <p> How disclosure requirements change what firms reveal, how they reveal it, and whether transparency persists when mandates disappear. </p> </div> <div class="research-card"> <div class="research-card-image-wrap"> <img src="/assets/img/research/muse_stroller_image.png" alt="Meta Muse shopping agent interface" class="research-card-image"> </div> <div class="research-image-source"> Source: <a href="https://cdn.geekwire.com/wp-content/uploads/2026/09/muse-stroller.png" target="_blank" rel="external nofollow noopener">GeekWire</a> </div> <div class="research-card-label">Theme 3</div> <h3>Agentic AI &amp; Delegated Choice</h3> <p> How AI assistants and shopping agents change information acquisition, consumer delegation, platform incentives, and competition. </p> </div> </div> <div class="research-section"> ## Working Papers <div class="research-paper"> ### Buy Box and Price Parity: Competitive Effects and Consumer Welfare in Online Marketplaces with **Lauren X. Lu and Wenqiang Xiao** *Under review at Manufacturing &amp; Service Operations Management* **Abstract** [Insert abstract here.] [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7294419) </div> <div class="research-paper"> ### Buy Box Allocation and Competitive Effects in Hybrid Marketplaces with **Haotian Song and Wenqiang Xiao** *Major Revision at Production and Operations Management* **Abstract** [Insert abstract here.] </div> </div> <div class="research-section"> ## Work in Progress <div class="research-paper"> ### [Project Title] with **[Coauthor(s), if applicable]** [Insert project description or abstract here.] </div> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Nipun Thakurele. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
+</style> <div class="research-kicker">Research Themes</div> <div class="research-headline"> Who controls information in digital markets? </div> <div class="research-theme-grid"> <div class="research-card"> <div class="research-card-image-wrap"> <img src="/assets/img/research/buy_box_image_detailed.webp" alt="Amazon Buy Box and competing sellers" class="research-card-image"> </div> <div class="research-image-source"> Source: <a href="https://metricscart.com/wp/wp-content/uploads/2023/05/what-is-a-buy-box.webp" target="_blank" rel="external nofollow noopener"> MetricsCart </a> </div> <div class="research-card-label">Theme 1</div> <div class="research-card-title"> Algorithmic Visibility &amp; Platform Competition </div> <p class="research-card-text"> How platform rules and algorithmic ranking determine seller visibility and reshape competition within and across marketplaces. </p> </div> <div class="research-card"> <div class="research-card-image-wrap"> <img src="/assets/img/research/data_safety_image.png" alt="Google Play Data Safety disclosure" class="research-card-image"> </div> <div class="research-image-source"> Source: <a href="https://support.google.com/googleplay/android-developer/answer/10787469?hl=en" target="_blank" rel="external nofollow noopener"> Google Play </a> </div> <div class="research-card-label">Theme 2</div> <div class="research-card-title"> Mandated Disclosure &amp; Strategic Transparency </div> <p class="research-card-text"> How disclosure requirements change what firms reveal, how they reveal it, and whether transparency persists when mandates disappear. </p> </div> <div class="research-card"> <div class="research-card-image-wrap"> <img src="/assets/img/research/muse_stroller_image.png" alt="Meta Muse shopping agent interface" class="research-card-image"> </div> <div class="research-image-source"> Source: <a href="https://cdn.geekwire.com/wp-content/uploads/2026/09/muse-stroller.png" target="_blank" rel="external nofollow noopener"> GeekWire </a> </div> <div class="research-card-label">Theme 3</div> <div class="research-card-title"> Agentic AI &amp; Delegated Choice </div> <p class="research-card-text"> How AI assistants and shopping agents change information acquisition, consumer delegation, platform incentives, and competition. </p> </div> </div> <div class="research-section"> <div class="research-section-title">Working Papers</div> <div class="research-paper"> <div class="research-paper-title"> Buy Box and Price Parity: Competitive Effects and Consumer Welfare in Online Marketplaces </div> <div class="research-paper-meta"> with Lauren X. Lu and Wenqiang Xiao </div> <div class="research-paper-status"> Under review at Manufacturing &amp; Service Operations Management </div> <div class="research-paper-abstract-label">Abstract</div> <p> [Insert abstract here.] </p> <p> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7294419" target="_blank" rel="external nofollow noopener"> SSRN </a> </p> </div> <hr class="research-divider"> <div class="research-paper"> <div class="research-paper-title"> Buy Box Allocation and Competitive Effects in Hybrid Marketplaces </div> <div class="research-paper-meta"> with Haotian Song and Wenqiang Xiao </div> <div class="research-paper-status"> Major Revision at Production and Operations Management </div> <div class="research-paper-abstract-label">Abstract</div> <p> [Insert abstract here.] </p> </div> </div> <div class="research-section"> <div class="research-section-title">Work in Progress</div> <div class="research-paper"> <div class="research-paper-title"> [Project Title] </div> <div class="research-paper-meta"> with [Coauthor(s), if applicable] </div> <p> [Insert project description or abstract here.] </p> </div> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Nipun Thakurele. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };
