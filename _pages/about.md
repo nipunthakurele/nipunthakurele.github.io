@@ -8,6 +8,7 @@ profile:
   align: right
   image: nipun_profile.jpg
   image_circular: false 
+  image_style: "box-shadow:none; border:none;"
   more_info:
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
