@@ -51,7 +51,7 @@ with Haotian Song and Wenqiang Xiao
 
 <div style="margin-top: 1.25rem;"></div>
 
-**Teaching Fellow — Foundations of AI Agents**  
+**Teaching Fellow — Foundations of AI Agents (MBA, MSBAi)**  
 NYU Stern School of Business, Fall 2026
 
 <div style="margin-top: 1rem;"></div>
