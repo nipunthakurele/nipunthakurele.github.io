@@ -494,3 +494,11 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 </script>
+
+<style>
+.profile .more-info a,
+.profile .more-info a:hover {
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+</style>
