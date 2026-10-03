@@ -1,15 +1,20 @@
 ---
-layout: page
+layout: null
+title: Teaching
 permalink: /teaching/
-title: teaching
-description: Course materials, schedules, and resources for classes taught.
-nav: false
-nav_order: 6
-calendar: true
+nav: true
+nav_order: 3
 ---
-
-This page displays a collection of courses with detailed schedules, materials, and resources. You can organize your courses by years, terms, or topics.
-
-{% include calendar.liquid calendar_id='test@gmail.com' timezone='Asia/Shanghai' %}
-
-{% include courses.liquid %}
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Teaching</title>
+  <script>
+    window.location.replace("/#teaching");
+  </script>
+</head>
+<body>
+  <a href="/#teaching">Teaching</a>
+</body>
+</html>
