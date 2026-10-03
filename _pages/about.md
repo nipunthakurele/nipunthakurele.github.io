@@ -11,7 +11,7 @@ profile:
   image_style: "box-shadow: none; border: none;"
   more_info: >
     <div style="text-align: center; margin-top: 0.7rem; font-size: 0.9rem;">
-      <a href="/assets/pdf/Nipun_Thakurele_CV_10_3_2026.pdf" target="_blank">CV</a>
+      <a href="/assets/pdf/Nipun_Thakurele_CV_10_3_2026.pdf">CV</a>
       <span style="margin: 0 0.45rem;">·</span>
       <a href="mailto:nt2328@stern.nyu.edu">Email</a>
     </div>
