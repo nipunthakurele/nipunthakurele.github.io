@@ -33,10 +33,11 @@ nav_order: 2
 }
 
 .research-card {
-  border: 1px solid var(--global-divider-color);
+  border: none;
   border-radius: 22px;
   padding: 1.5rem;
-  background: var(--global-bg-color);
+  background: #062248;
+  color: white;
   min-height: 100%;
 }
 
@@ -52,13 +53,22 @@ nav_order: 2
   width: 100%;
   height: 100%;
   object-fit: contain;
+  border-radius: 7px;
+}
+
+.research-image-source,
+.research-image-source a,
+.research-card-label,
+.research-card-title,
+.research-card-text {
+  color: white;
 }
 
 .research-image-source {
   text-align: center;
   font-size: 0.72rem;
   font-style: italic;
-  opacity: 0.65;
+  opacity: 0.7;
   margin-bottom: 1.4rem;
 }
 
@@ -67,7 +77,7 @@ nav_order: 2
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--global-theme-color);
+  opacity: 0.75;
   margin-bottom: 0.55rem;
 }
 
@@ -81,6 +91,7 @@ nav_order: 2
 .research-card-text {
   font-size: 0.96rem;
   line-height: 1.6;
+  opacity: 0.9;
   margin: 0;
 }
 
@@ -171,7 +182,6 @@ nav_order: 2
     </p>
   </div>
 
-
   <div class="research-card">
     <div class="research-card-image-wrap">
       <img
@@ -198,7 +208,6 @@ nav_order: 2
       and whether transparency persists when mandates disappear.
     </p>
   </div>
-
 
   <div class="research-card">
     <div class="research-card-image-wrap">
@@ -228,7 +237,6 @@ nav_order: 2
   </div>
 
 </div>
-
 
 <div class="research-section">
 
@@ -287,7 +295,6 @@ nav_order: 2
   </div>
 
 </div>
-
 
 <div class="research-section">
 
