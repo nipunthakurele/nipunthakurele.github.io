@@ -359,3 +359,85 @@ NYU Stern School of Business, Fall 2026
 **Instructor — Operations Management (UG Course)**  
 NYU Stern School of Business, Winter 2025
 
+
+<style>
+html {
+  scroll-behavior: smooth;
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const navLinks = Array.from(
+    document.querySelectorAll(".navbar-nav .nav-link")
+  );
+
+  const research = document.getElementById("research");
+  const teaching = document.getElementById("teaching");
+
+  if (!research || !teaching) return;
+
+  function sectionForLink(link) {
+    const url = new URL(link.href, window.location.origin);
+
+    if (url.hash === "#research" || url.pathname.endsWith("/research/")) {
+      return "research";
+    }
+
+    if (url.hash === "#teaching" || url.pathname.endsWith("/teaching/")) {
+      return "teaching";
+    }
+
+    if (url.pathname === "/" && !url.hash) {
+      return "about";
+    }
+
+    return null;
+  }
+
+  /* Make Research and Teaching direct same-page links */
+  navLinks.forEach(function (link) {
+    const section = sectionForLink(link);
+
+    if (section === "research") {
+      link.href = "/#research";
+    }
+
+    if (section === "teaching") {
+      link.href = "/#teaching";
+    }
+  });
+
+  function setActive(section) {
+    navLinks.forEach(function (link) {
+      const active = sectionForLink(link) === section;
+
+      link.classList.toggle("active", active);
+
+      if (active) {
+        link.setAttribute("aria-current", "page");
+      } else {
+        link.removeAttribute("aria-current");
+      }
+    });
+  }
+
+  function updateActiveSection() {
+    const offset = 180;
+    const position = window.scrollY + offset;
+
+    if (position >= teaching.offsetTop) {
+      setActive("teaching");
+    } else if (position >= research.offsetTop) {
+      setActive("research");
+    } else {
+      setActive("about");
+    }
+  }
+
+  window.addEventListener("scroll", updateActiveSection, { passive: true });
+  window.addEventListener("resize", updateActiveSection);
+
+  updateActiveSection();
+});
+</script>
