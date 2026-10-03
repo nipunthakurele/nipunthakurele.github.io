@@ -11,7 +11,7 @@ profile:
   image_style: "box-shadow: none; border: none;"
 
 selected_papers: false
-social: true
+social: false
 
 announcements:
   enabled: false
@@ -19,12 +19,6 @@ announcements:
 latest_posts:
   enabled: false
 ---
-
-<div class="home-nav">
-  <a href="#research">Research</a>
-  <span>&nbsp;&nbsp;·&nbsp;&nbsp;</span>
-  <a href="#teaching">Teaching</a>
-</div>
 
 I am a PhD candidate in the Department of Technology, Operations and Statistics at **NYU Stern School of Business** and am on the 2026–27 academic job market.
 
@@ -34,7 +28,7 @@ Methodologically, I primarily use game-theoretic models grounded in real institu
 
 <br>
 
-<h2 id="research">Research</h2>
+## Research
 
 ### Working Papers
 
@@ -42,16 +36,14 @@ Methodologically, I primarily use game-theoretic models grounded in real institu
 with Lauren X. Lu and Wenqiang Xiao  
 *Under review at Manufacturing & Service Operations Management*
 
-[Add short paper description here.]
-
-### Work in Progress
-
-**[Project title]**  
-[Short description.]
+[View all research →](/research/)
 
 <br>
 
-<h2 id="teaching">Teaching</h2>
+## Recent Teaching
 
-**[Course Name]**  
-[Role], NYU Stern School of Business, [Year]
+**[Most Recent Course]**  
+[Role], NYU Stern School of Business, [Semester / Year]
+
+**[Second Most Recent Course]**  
+[Role], NYU Stern School of Business, [Semester / Year]
