@@ -138,7 +138,7 @@ Methodologically, I primarily use game-theoretic models grounded in real institu
 }
 
 .research-section {
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 
 .research-section-title {
@@ -152,7 +152,7 @@ Methodologically, I primarily use game-theoretic models grounded in real institu
 }
 
 .research-paper + .research-paper {
-  margin-top: 1.8rem;
+  margin-top: 0.9rem;
 }
 
 .research-paper-title {
@@ -302,16 +302,19 @@ Methodologically, I primarily use game-theoretic models grounded in real institu
 
     <div class="research-paper-status">
       Under review at Manufacturing &amp; Service Operations Management
+      <span style="margin: 0 0.35rem;">·</span>
+      <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7294419"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="SSRN"
+         title="SSRN"
+         style="text-decoration: none;">
+        <i class="ai ai-ssrn"></i>
+      </a>
     </div>
 
     <p>
       Online marketplaces can condition prominent seller visibility, as in Amazon’s Buy Box, on whether sellers keep their prices no higher than on rival platforms, creating an implicit price-parity rule. How such a rule affects competition and consumer welfare when sellers can choose whether to comply is an important question. We find that its effects depend critically on seller response and market structure, and need not be uniformly harmful to consumers.
-    </p>
-
-    <p>
-      <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7294419" target="_blank">
-        SSRN
-      </a>
     </p>
 
   </div>
@@ -358,21 +361,139 @@ Methodologically, I primarily use game-theoretic models grounded in real institu
 
 
 
-<h2 id="teaching" style="scroll-margin-top: 6rem; margin-top: 4.5rem;">Recent Teaching</h2>
+<style>
+.teaching-section {
+  margin-top: 4.5rem;
+}
 
-**Teaching Fellow — Foundations of AI Agents**  
-NYU Stern School of Business, Fall 2026
+.teaching-section-title {
+  margin-bottom: 1.1rem;
+}
 
-<div style="margin-top: 1rem;"></div>
+.teaching-subsection-title {
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
 
-**Teaching Assistant — Operations Management (MBA)**  
-NYU Stern School of Business, Fall 2026
+.teaching-subsection + .teaching-subsection {
+  margin-top: 2rem;
+}
 
-<div style="margin-top: 1rem;"></div>
+.teaching-subsection.assistant .teaching-subsection-title {
+  margin-bottom: 0.9rem;
+}
 
-**Instructor — Operations Management (UG Course)**  
-NYU Stern School of Business, Winter 2025
+.teaching-course {
+  margin: 0;
+}
 
+.teaching-course + .teaching-course {
+  margin-top: 0.8rem;
+}
+
+.teaching-course-title {
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.teaching-course-meta {
+  margin-top: 0.1rem;
+  font-size: 0.95rem;
+}
+</style>
+
+<div id="teaching"
+     class="teaching-section"
+     style="scroll-margin-top: 6rem;">
+
+  <h2 class="teaching-section-title">Teaching</h2>
+
+  <div class="teaching-subsection">
+
+    <div class="teaching-subsection-title">
+      Instructor — NYU Stern School of Business
+    </div>
+
+    <div class="teaching-course">
+      <div class="teaching-course-title">
+        Operations Management, UG Course (OPMG-UB.1) — Winter 2025
+      </div>
+    </div>
+
+  </div>
+
+  <div class="teaching-subsection assistant">
+
+    <div class="teaching-subsection-title">
+      Teaching Fellow / Assistant — NYU Stern School of Business
+    </div>
+
+    <div class="teaching-course">
+      <div class="teaching-course-title">
+        Foundations of AI Agents — Summer 2026, Fall 2026
+      </div>
+      <div class="teaching-course-meta">
+        Instructors: Ilan Lobel, Raveesh Mayya
+      </div>
+    </div>
+
+    <div class="teaching-course">
+      <div class="teaching-course-title">
+        Operations Management, MBA Course — Spring 2023, Fall 2026
+      </div>
+      <div class="teaching-course-meta">
+        Instructors: Srikanth Jagabathula, Wenqiang Xiao
+      </div>
+    </div>
+
+    <div class="teaching-course">
+      <div class="teaching-course-title">
+        Decision Models — Summer 2026
+      </div>
+      <div class="teaching-course-meta">
+        Instructor: Jiawei Zhang
+      </div>
+    </div>
+
+    <div class="teaching-course">
+      <div class="teaching-course-title">
+        Microeconomics with Algebra / Calculus — Fall 2023, Fall 2024
+      </div>
+      <div class="teaching-course-meta">
+        Instructors: Simon Bowmaker, Tommaso Denti
+      </div>
+    </div>
+
+    <div class="teaching-course">
+      <div class="teaching-course-title">
+        Revenue Management &amp; Pricing — Spring 2023
+      </div>
+      <div class="teaching-course-meta">
+        Instructor: Gustavo Vulcano
+      </div>
+    </div>
+
+    <div class="teaching-course">
+      <div class="teaching-course-title">
+        Operations Management, UG Course — Fall 2023
+      </div>
+      <div class="teaching-course-meta">
+        Instructor: Divya Singhvi
+      </div>
+    </div>
+
+    <div class="teaching-course">
+      <div class="teaching-course-title">
+        Decision Under Risk — Fall 2022
+      </div>
+      <div class="teaching-course-meta">
+        Instructor: Gustavo Vulcano
+      </div>
+    </div>
+
+  </div>
+
+</div>
 
 <style>
 html {
