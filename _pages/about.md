@@ -14,6 +14,10 @@ profile:
       <a href="/assets/pdf/Nipun_Thakurele_CV_10_3_2026.pdf">CV</a>
       <span style="margin: 0 0.45rem;">·</span>
       <a href="mailto:nt2328@stern.nyu.edu">Email</a>
+      <span style="margin: 0 0.45rem;">·</span>
+      <a href="https://scholar.google.com/citations?user=Q-YK2FQAAAAJ" target="_blank" rel="noopener noreferrer">Scholar</a>
+      <span style="margin: 0 0.45rem;">·</span>
+      <a href="https://www.linkedin.com/in/nipunthakurele" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     </div>
 
 selected_papers: false
@@ -26,7 +30,7 @@ latest_posts:
   enabled: false
 ---
 
-I am a PhD candidate in the Department of Technology, Operations and Statistics at **NYU Stern School of Business** and am on the 2026–27 academic job market.
+I am a PhD candidate in the [Department of Technology, Operations and Statistics](https://www.stern.nyu.edu/experience-stern/about/departments-centers-initiatives/academic-departments/tops) at **NYU Stern School of Business** and am on the 2026–27 academic job market.
 
 My research studies how information and visibility are controlled in digital markets, and how that control shapes competition, firm strategy, and consumer welfare. I examine these questions in settings involving online platforms, disclosure mandates, and AI intermediaries. Across my work, a common theme is that seemingly informational design choices—such as which seller is shown, what firms must disclose, or what an AI assistant reveals to consumers—can fundamentally change firms’ incentives and market outcomes.
 
