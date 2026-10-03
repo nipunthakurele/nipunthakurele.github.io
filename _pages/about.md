@@ -49,6 +49,10 @@ Methodologically, I primarily use game-theoretic models grounded in real institu
 <br><br>
 
 <style>
+#research {
+  clear: both;
+}
+
 .research-kicker {
   margin-top: 1.2rem;
   margin-bottom: 0.5rem;
@@ -308,7 +312,7 @@ Methodologically, I primarily use game-theoretic models grounded in real institu
          rel="noopener noreferrer"
          aria-label="SSRN"
          title="SSRN"
-         style="text-decoration: none; font-size: 1.05rem; vertical-align: middle;">
+         style="text-decoration: none; font-size: 1.2em; font-weight: 700; vertical-align: -0.08em;">
         <i class="ai ai-ssrn"></i>
       </a>
     </div>
