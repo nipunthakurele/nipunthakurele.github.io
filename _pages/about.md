@@ -44,7 +44,7 @@ I am a PhD candidate in the [Department of Technology, Operations and Statistics
 
 My research studies how information and visibility are controlled in digital markets, and how that control shapes competition, firm strategy, and consumer welfare. I examine these questions in settings involving online platforms, disclosure mandates, and AI intermediaries. Across my work, a common theme is that seemingly informational design choices—such as which seller is shown, what firms must disclose, or what an AI assistant reveals to consumers—can fundamentally change firms’ incentives and market outcomes.
 
-Methodologically, I primarily use game-theoretic models grounded in real institutional settings, complemented by empirical analysis where appropriate.
+
 
 <br><br>
 
