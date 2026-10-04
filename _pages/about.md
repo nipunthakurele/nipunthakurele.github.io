@@ -10,24 +10,14 @@ profile:
   image_circular: false
   image_style: "box-shadow: none; border: none;"
   more_info: >
-    <div style="text-align: center; margin-top: 0.7rem; font-size: 1.05rem; white-space: nowrap;">
-      <a href="/assets/pdf/Nipun_Thakurele_CV_10_3_2026.pdf" aria-label="CV" title="CV">
-        <i class="fa-solid fa-file-pdf"></i>
-      </a>
-      <span style="margin: 0 0.4rem;"></span>
-      <a href="mailto:nt2328@stern.nyu.edu" aria-label="Email" title="Email">
-        <i class="fa-solid fa-envelope"></i>
-      </a>
-      <span style="margin: 0 0.4rem;"></span>
-      <a href="https://scholar.google.com/citations?user=Q-YK2FQAAAAJ"
-         target="_blank" rel="noopener noreferrer" aria-label="Google Scholar" title="Google Scholar">
-        <i class="ai ai-google-scholar"></i>
-      </a>
-      <span style="margin: 0 0.4rem;"></span>
+    <div style="text-align: center; margin-top: 0.7rem; font-size: 0.9rem; white-space: nowrap;">
+      <a href="mailto:nt2328@stern.nyu.edu">Email</a>
+      <span style="margin: 0 0.4rem;">·</span>
+      <a href="https://scholar.google.com/citations?user=Q-YK2FQAAAAJ&amp;hl=en&amp;oi=ao"
+         target="_blank" rel="noopener noreferrer">Scholar</a>
+      <span style="margin: 0 0.4rem;">·</span>
       <a href="https://www.linkedin.com/in/nipunthakurele"
-         target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
-        <i class="fa-brands fa-linkedin"></i>
-      </a>
+         target="_blank" rel="noopener noreferrer">LinkedIn</a>
     </div>
 
 selected_papers: false
