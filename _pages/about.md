@@ -6,7 +6,7 @@ subtitle: PhD Candidate, NYU Stern School of Business
 
 profile:
   align: right
-  image: nipun_profile.png
+  image: nipun_profile_oct14.png
   image_circular: false
   image_style: "box-shadow: none; border: none;"
   more_info: >
