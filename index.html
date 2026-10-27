@@ -192,7 +192,7 @@
   font-style: italic;
   opacity: 0.85;
 }
-</style> <div id="teaching" class="teaching-section" style="scroll-margin-top: 6rem;"> <h2 class="teaching-section-title">Teaching</h2> <div class="teaching-subsection"> <div class="teaching-subsection-title"> Instructor — NYU Stern School of Business </div> <div class="teaching-course"> <div class="teaching-course-title"> Operations Management, UG Course (OPMG-UB.1) — Winter 2025 </div> </div> </div> <div class="teaching-subsection assistant"> <div class="teaching-subsection-title"> Teaching Fellow / Assistant — NYU Stern School of Business </div> <div class="teaching-course"> <div class="teaching-course-title"> Foundations of AI Agents — Summer 2026, Fall 2026 </div> <div class="teaching-course-meta"> Instructors: Ilan Lobel, Raveesh Mayya </div> </div> <div class="teaching-course"> <div class="teaching-course-title"> Operations Management, MBA Course — Spring 2023, Fall 2026 </div> <div class="teaching-course-meta"> Instructors: Srikanth Jagabathula, Wenqiang Xiao </div> </div> <div class="teaching-course"> <div class="teaching-course-title"> Decision Models — Summer 2026 </div> <div class="teaching-course-meta"> Instructor: Jiawei Zhang </div> </div> <div class="teaching-course"> <div class="teaching-course-title"> Microeconomics with Algebra / Calculus — Fall 2023, Fall 2024 </div> <div class="teaching-course-meta"> Instructors: Simon Bowmaker, Tommaso Denti </div> </div> <div class="teaching-course"> <div class="teaching-course-title"> Revenue Management &amp; Pricing — Spring 2023 </div> <div class="teaching-course-meta"> Instructor: Gustavo Vulcano </div> </div> <div class="teaching-course"> <div class="teaching-course-title"> Operations Management, UG Course — Fall 2023 </div> <div class="teaching-course-meta"> Instructor: Divya Singhvi </div> </div> <div class="teaching-course"> <div class="teaching-course-title"> Decision Under Risk — Fall 2022 </div> <div class="teaching-course-meta"> Instructor: Gustavo Vulcano </div> </div> </div> </div> <style>
+</style> <div id="teaching" class="teaching-section" style="scroll-margin-top: 6rem;"> <h2 class="teaching-section-title">Teaching</h2> <div class="teaching-subsection"> <div class="teaching-subsection-title"> Instructor — NYU Stern School of Business </div> <div class="teaching-course"> <div class="teaching-course-title"> Operations Management, UG Course (OPMG-UB.1) — Winter 2025 </div> </div> </div> <div class="teaching-subsection assistant"> <div class="teaching-subsection-title"> Teaching Fellow / Assistant — NYU Stern School of Business </div> <div class="teaching-course"> <div class="teaching-course-title"> <i class="fa-solid fa-robot" style="color: var(--global-theme-color); margin-right: 0.35rem;" aria-hidden="true"></i> Foundations of AI Agents — Summer 2026, Fall 2026 </div> <div class="teaching-course-meta"> Instructors: Ilan Lobel, Raveesh Mayya </div> </div> </div> <div style="margin-top: 1.1rem;"> <a href="#teaching-full" id="teaching-more">More →</a> </div> <details id="teaching-full" style="margin-top: 2rem; scroll-margin-top: 6rem;"> <summary style="display: none;">Full Teaching History</summary> <div class="teaching-subsection assistant"> <div class="teaching-course"> <div class="teaching-course-title"> Operations Management, MBA Course — Spring 2023, Fall 2026 </div> <div class="teaching-course-meta"> Instructors: Srikanth Jagabathula, Wenqiang Xiao </div> </div> <div class="teaching-course"> <div class="teaching-course-title"> Decision Models — Summer 2026 </div> <div class="teaching-course-meta"> Instructor: Jiawei Zhang </div> </div> <div class="teaching-course"> <div class="teaching-course-title"> Microeconomics with Algebra / Calculus — Fall 2023, Fall 2024 </div> <div class="teaching-course-meta"> Instructors: Simon Bowmaker, Tommaso Denti </div> </div> <div class="teaching-course"> <div class="teaching-course-title"> Revenue Management &amp; Pricing — Spring 2023 </div> <div class="teaching-course-meta"> Instructor: Gustavo Vulcano </div> </div> <div class="teaching-course"> <div class="teaching-course-title"> Operations Management, UG Course — Fall 2023 </div> <div class="teaching-course-meta"> Instructor: Divya Singhvi </div> </div> <div class="teaching-course"> <div class="teaching-course-title"> Decision Under Risk — Fall 2022 </div> <div class="teaching-course-meta"> Instructor: Gustavo Vulcano </div> </div> </div> </details> </div> <style>
 html {
   scroll-behavior: smooth;
 }
@@ -360,6 +360,25 @@ document.addEventListener("click", function (event) {
 
   history.replaceState(null, "", "/");
 }, true);
+</script> <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const more = document.getElementById("teaching-more");
+  const full = document.getElementById("teaching-full");
+
+  if (!more || !full) return;
+
+  more.addEventListener("click", function (event) {
+    event.preventDefault();
+    full.open = true;
+
+    full.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+
+    history.replaceState(null, "", "/");
+  });
+});
 </script> </div> </article> </div> </div> <footer class="sticky-bottom mt-5" role="contentinfo"> <div class="container"> © Copyright 2026 Nipun Thakurele. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
