@@ -304,7 +304,7 @@ My research studies how information and visibility are controlled in digital mar
     </div>
 
     <div class="research-paper-status">
-      Under review at Manufacturing &amp; Service Operations Management
+      Major Revision at Manufacturing &amp; Service Operations Management
       <span style="margin: 0 0.35rem;">·</span>
       <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7294419"
          target="_blank"
@@ -455,13 +455,11 @@ My research studies how information and visibility are controlled in digital mar
 
   </div>
 
-  <div style="margin-top: 1.1rem;">
-    <a href="#teaching-full" id="teaching-more">More →</a>
-  </div>
+  <details id="teaching-full"
+           class="teaching-more"
+           style="scroll-margin-top: 6rem;">
 
-  <details id="teaching-full" style="margin-top: 2rem; scroll-margin-top: 6rem;">
-
-    <summary style="display: none;">Full Teaching History</summary>
+    <summary>More →</summary>
 
     <div class="teaching-subsection assistant">
 
@@ -774,3 +772,28 @@ document.addEventListener("DOMContentLoaded", function () {
   }, { passive: true });
 });
 </script>
+
+<style>
+#paper-1,
+#paper-2 {
+  scroll-margin-top: 7rem;
+}
+</style>
+
+<style>
+.teaching-more > summary {
+  display: inline-block;
+  margin-top: 1.1rem;
+  cursor: pointer;
+  color: var(--global-theme-color);
+  list-style: none;
+}
+
+.teaching-more > summary::-webkit-details-marker {
+  display: none;
+}
+
+.teaching-more[open] > summary {
+  margin-bottom: 1.2rem;
+}
+</style>
