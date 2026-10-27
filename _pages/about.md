@@ -54,8 +54,8 @@ My research studies how information and visibility are controlled in digital mar
 }
 
 .research-headline {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 2rem;
+font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.9rem;
   line-height: 1.15;
   font-weight: 700;
   margin-bottom: 1.6rem;
@@ -69,12 +69,14 @@ My research studies how information and visibility are controlled in digital mar
 }
 
 .research-card {
-  border: none;
+border: none;
   border-radius: 18px;
   padding: 1.1rem;
   background: #0A1F3F;
   color: white;
   min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .research-card-image-wrap {
@@ -101,11 +103,11 @@ My research studies how information and visibility are controlled in digital mar
 }
 
 .research-image-source {
-  text-align: center;
-  font-size: 0.72rem;
+text-align: center;
+  font-size: 0.70rem;
   font-style: italic;
-  opacity: 0.7;
-  margin-bottom: 1rem;
+  opacity: 0.55;
+  margin-bottom: 1.2rem;
 }
 
 .research-card-label {
@@ -150,19 +152,21 @@ My research studies how information and visibility are controlled in digital mar
 }
 
 .research-paper-title {
-  font-size: 1.25rem;
-  line-height: 1.4;
+font-size: 1.18rem;
+  line-height: 1.35;
   font-weight: 700;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.35rem;
 }
 
 .research-paper-meta {
-  margin-bottom: 0.45rem;
+font-size: 0.95rem;
+  margin-bottom: 0.25rem;
 }
 
 .research-paper-status {
+font-size: 0.95rem;
   font-style: italic;
-  margin-bottom: 1rem;
+  margin-bottom: 0.9rem;
 }
 
 .research-paper-abstract-label {
@@ -729,13 +733,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <style>
 .research-card-paper-map {
-  margin-top: 0.8rem;
-  font-size: 0.82rem;
+margin-top: auto;
+  padding-top: 0.9rem;
+  font-size: 0.78rem;
   font-weight: 700;
 }
 
 .research-card-paper-map a {
-  color: var(--global-theme-color) !important;
+color: var(--global-theme-color) !important;
   text-decoration: none !important;
 }
 
@@ -825,24 +830,34 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <style>
 .ssrn-badge {
-  display: inline-flex;
+display: inline-flex;
   align-items: center;
   justify-content: center;
   margin-left: 0.25rem;
-  padding: 0.12rem 0.38rem;
-  border-radius: 5px;
-  background: var(--global-theme-color);
-  color: white !important;
+  padding: 0.08rem 0.30rem;
+  border: 1px solid var(--global-theme-color);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--global-theme-color) !important;
   text-decoration: none !important;
   vertical-align: middle;
 }
 
 .ssrn-badge:hover {
+background: var(--global-theme-color);
   color: white !important;
   text-decoration: none !important;
 }
 
 .ssrn-badge i {
-  font-size: 1.05em;
+font-size: 1.05em;
+}
+</style>
+
+<style>
+.research-paper > p {
+  margin-top: 0.7rem;
+  margin-bottom: 0;
+  line-height: 1.55;
 }
 </style>
