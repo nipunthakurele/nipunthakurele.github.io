@@ -442,7 +442,34 @@ document.addEventListener("DOMContentLoaded", function () {
 .teaching-more[open] > summary {
   margin-bottom: 1.2rem;
 }
-</style> </div> </article> </div> </div> <footer class="sticky-bottom mt-5" role="contentinfo"> <div class="container"> © Copyright 2026 Nipun Thakurele. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
+</style> <script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll('.research-card-paper-map a[href^="#paper-"]').forEach(function(link) {
+    link.addEventListener("click", function(event) {
+      event.preventDefault();
+
+      const target = document.querySelector(link.getAttribute("href"));
+      if (!target) return;
+
+      const navbar = document.querySelector(".navbar");
+      const navbarHeight = navbar ? navbar.getBoundingClientRect().height : 70;
+
+      const top =
+        target.getBoundingClientRect().top +
+        window.scrollY -
+        navbarHeight -
+        30;
+
+      window.scrollTo({
+        top: top,
+        behavior: "smooth"
+      });
+
+      history.replaceState(null, "", "/");
+    });
+  });
+});
+</script> </div> </article> </div> </div> <footer class="sticky-bottom mt-5" role="contentinfo"> <div class="container"> © Copyright 2026 Nipun Thakurele. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };
