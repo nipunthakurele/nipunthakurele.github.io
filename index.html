@@ -412,14 +412,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Collapse when the visitor scrolls back above Teaching.
-  window.addEventListener("scroll", function () {
-    const position = window.scrollY + 180;
-
-    if (position < teaching.offsetTop) {
-      fullTeaching.open = false;
-    }
-  }, { passive: true });
 });
 </script> <style>
 #paper-1,
