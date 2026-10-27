@@ -354,7 +354,11 @@ font-size: 0.95rem;
   <div class="research-paper">
 
     <div class="research-paper-title" id="paper-3">
-      3. Best for You: AI Assistants, Personalization, and Price Competition on Retail Platforms
+      3. Privacy Labels and Platform Mandated Transparency
+    </div>
+
+    <div class="research-paper-meta">
+      with Raveesh Mayya
     </div>
 
   </div>
@@ -362,11 +366,7 @@ font-size: 0.95rem;
   <div class="research-paper">
 
     <div class="research-paper-title" id="paper-4">
-      4. Privacy Labels and Platform Mandated Transparency
-    </div>
-
-    <div class="research-paper-meta">
-      with Raveesh Mayya
+      4. Best for You: AI Assistants, Personalization, and Price Competition on Retail Platforms
     </div>
 
   </div>
