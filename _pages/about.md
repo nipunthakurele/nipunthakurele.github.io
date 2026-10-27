@@ -306,12 +306,12 @@ My research studies how information and visibility are controlled in digital mar
     <div class="research-paper-status">
       Major Revision at Manufacturing &amp; Service Operations Management
       <span style="margin: 0 0.35rem;">·</span>
-      <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7294419"
+      <a class="ssrn-badge"
+         href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7294419"
          target="_blank"
          rel="noopener noreferrer"
-         title="SSRN"
-         style="text-decoration: none; color: var(--global-theme-color);">
-        <i class="ai ai-ssrn" style="font-size: 1.35em; vertical-align: -0.08em;"></i>
+         title="SSRN">
+        <i class="ai ai-ssrn"></i>
       </a>
     </div>
 
@@ -735,8 +735,12 @@ document.addEventListener("DOMContentLoaded", function () {
 }
 
 .research-card-paper-map a {
-  color: white !important;
+  color: var(--global-theme-color) !important;
   text-decoration: none !important;
+}
+
+.research-card-paper-map a:hover {
+  text-decoration: underline !important;
 }
 
 .research-card-paper-map a:hover {
@@ -818,3 +822,27 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 </script>
+
+<style>
+.ssrn-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.25rem;
+  padding: 0.12rem 0.38rem;
+  border-radius: 5px;
+  background: var(--global-theme-color);
+  color: white !important;
+  text-decoration: none !important;
+  vertical-align: middle;
+}
+
+.ssrn-badge:hover {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+.ssrn-badge i {
+  font-size: 1.05em;
+}
+</style>
