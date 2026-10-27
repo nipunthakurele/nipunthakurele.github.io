@@ -222,6 +222,9 @@ My research studies how information and visibility are controlled in digital mar
       How platform rules and algorithmic ranking determine seller visibility
       and reshape competition within and across marketplaces.
     </p>
+    <div class="research-card-paper-map">
+      <a href="#paper-1">Paper 1</a> · <a href="#paper-2">Paper 2</a>
+    </div>
   </div>
 
   <div class="research-card">
@@ -249,6 +252,9 @@ My research studies how information and visibility are controlled in digital mar
       How disclosure requirements change what firms reveal, how they reveal it,
       and whether transparency persists when mandates disappear.
     </p>
+    <div class="research-card-paper-map">
+      <a href="#paper-4">Paper 4</a>
+    </div>
   </div>
 
   <div class="research-card">
@@ -276,6 +282,9 @@ My research studies how information and visibility are controlled in digital mar
       How AI assistants and shopping agents change information acquisition,
       consumer delegation, platform incentives, and competition.
     </p>
+    <div class="research-card-paper-map">
+      <a href="#paper-3">Paper 3</a>
+    </div>
   </div>
 
 </div>
@@ -286,8 +295,8 @@ My research studies how information and visibility are controlled in digital mar
 
   <div class="research-paper">
 
-    <div class="research-paper-title">
-      Buy Box and Price Parity: Competitive Effects and Consumer Welfare in Online Marketplaces
+    <div class="research-paper-title" id="paper-1">
+      1. Buy Box and Price Parity: Competitive Effects and Consumer Welfare in Online Marketplaces
     </div>
 
     <div class="research-paper-meta">
@@ -314,8 +323,8 @@ My research studies how information and visibility are controlled in digital mar
 
   <div class="research-paper">
 
-    <div class="research-paper-title">
-      Buy Box Allocation and Competitive Effects in Hybrid Marketplaces
+    <div class="research-paper-title" id="paper-2">
+      2. Buy Box Allocation and Competitive Effects in Hybrid Marketplaces
     </div>
 
     <div class="research-paper-meta">
@@ -340,8 +349,16 @@ My research studies how information and visibility are controlled in digital mar
 
   <div class="research-paper">
 
-    <div class="research-paper-title">
-      Privacy Labels and Platform Mandated Transparency
+    <div class="research-paper-title" id="paper-3">
+      3. Best for You: AI Assistants, Personalization, and Price Competition on Retail Platforms
+    </div>
+
+  </div>
+
+  <div class="research-paper">
+
+    <div class="research-paper-title" id="paper-4">
+      4. Privacy Labels and Platform Mandated Transparency
     </div>
 
     <div class="research-paper-meta">
@@ -709,5 +726,51 @@ document.addEventListener("DOMContentLoaded", function () {
 
     history.replaceState(null, "", "/");
   });
+});
+</script>
+
+<style>
+.research-card-paper-map {
+  margin-top: 0.8rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.research-card-paper-map a {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+.research-card-paper-map a:hover {
+  text-decoration: underline !important;
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const fullTeaching = document.getElementById("teaching-full");
+  const teaching = document.getElementById("teaching");
+
+  if (!fullTeaching || !teaching) return;
+
+  // Collapse when another navbar section is selected.
+  document.querySelectorAll(".navbar-nav .nav-link").forEach(function (link) {
+    link.addEventListener("click", function () {
+      const label = link.textContent.trim().toLowerCase();
+
+      if (label !== "teaching") {
+        fullTeaching.open = false;
+      }
+    });
+  });
+
+  // Collapse when the visitor scrolls back above Teaching.
+  window.addEventListener("scroll", function () {
+    const position = window.scrollY + 180;
+
+    if (position < teaching.offsetTop) {
+      fullTeaching.open = false;
+    }
+  }, { passive: true });
 });
 </script>
