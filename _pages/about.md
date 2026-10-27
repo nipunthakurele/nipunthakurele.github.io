@@ -797,3 +797,32 @@ document.addEventListener("DOMContentLoaded", function () {
   margin-bottom: 1.2rem;
 }
 </style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll('.research-card-paper-map a[href^="#paper-"]').forEach(function(link) {
+    link.addEventListener("click", function(event) {
+      event.preventDefault();
+
+      const target = document.querySelector(link.getAttribute("href"));
+      if (!target) return;
+
+      const navbar = document.querySelector(".navbar");
+      const navbarHeight = navbar ? navbar.getBoundingClientRect().height : 70;
+
+      const top =
+        target.getBoundingClientRect().top +
+        window.scrollY -
+        navbarHeight -
+        30;
+
+      window.scrollTo({
+        top: top,
+        behavior: "smooth"
+      });
+
+      history.replaceState(null, "", "/");
+    });
+  });
+});
+</script>
