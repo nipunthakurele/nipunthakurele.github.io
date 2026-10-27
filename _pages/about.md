@@ -257,7 +257,7 @@ font-size: 0.95rem;
       and whether transparency persists when mandates disappear.
     </p>
     <div class="research-card-paper-map">
-      <a href="#paper-4">Paper 4</a>
+      <a href="#paper-3">Paper 3</a>
     </div>
   </div>
 
@@ -287,7 +287,7 @@ font-size: 0.95rem;
       consumer delegation, platform incentives, and competition.
     </p>
     <div class="research-card-paper-map">
-      <a href="#paper-3">Paper 3</a>
+      <a href="#paper-4">Paper 4</a>
     </div>
   </div>
 
