@@ -425,68 +425,86 @@ My research studies how information and visibility are controlled in digital mar
 
     <div class="teaching-course">
       <div class="teaching-course-title">
+        <i class="fa-solid fa-robot"
+           style="color: var(--global-theme-color); margin-right: 0.35rem;"
+           aria-hidden="true"></i>
         Foundations of AI Agents — Summer 2026, Fall 2026
       </div>
+
       <div class="teaching-course-meta">
         Instructors: Ilan Lobel, Raveesh Mayya
       </div>
     </div>
 
-    <div class="teaching-course">
-      <div class="teaching-course-title">
-        Operations Management, MBA Course — Spring 2023, Fall 2026
-      </div>
-      <div class="teaching-course-meta">
-        Instructors: Srikanth Jagabathula, Wenqiang Xiao
-      </div>
-    </div>
-
-    <div class="teaching-course">
-      <div class="teaching-course-title">
-        Decision Models — Summer 2026
-      </div>
-      <div class="teaching-course-meta">
-        Instructor: Jiawei Zhang
-      </div>
-    </div>
-
-    <div class="teaching-course">
-      <div class="teaching-course-title">
-        Microeconomics with Algebra / Calculus — Fall 2023, Fall 2024
-      </div>
-      <div class="teaching-course-meta">
-        Instructors: Simon Bowmaker, Tommaso Denti
-      </div>
-    </div>
-
-    <div class="teaching-course">
-      <div class="teaching-course-title">
-        Revenue Management &amp; Pricing — Spring 2023
-      </div>
-      <div class="teaching-course-meta">
-        Instructor: Gustavo Vulcano
-      </div>
-    </div>
-
-    <div class="teaching-course">
-      <div class="teaching-course-title">
-        Operations Management, UG Course — Fall 2023
-      </div>
-      <div class="teaching-course-meta">
-        Instructor: Divya Singhvi
-      </div>
-    </div>
-
-    <div class="teaching-course">
-      <div class="teaching-course-title">
-        Decision Under Risk — Fall 2022
-      </div>
-      <div class="teaching-course-meta">
-        Instructor: Gustavo Vulcano
-      </div>
-    </div>
-
   </div>
+
+  <div style="margin-top: 1.1rem;">
+    <a href="#teaching-full" id="teaching-more">More →</a>
+  </div>
+
+  <details id="teaching-full" style="margin-top: 2rem; scroll-margin-top: 6rem;">
+
+    <summary style="display: none;">Full Teaching History</summary>
+
+    <div class="teaching-subsection assistant">
+
+      <div class="teaching-course">
+        <div class="teaching-course-title">
+          Operations Management, MBA Course — Spring 2023, Fall 2026
+        </div>
+        <div class="teaching-course-meta">
+          Instructors: Srikanth Jagabathula, Wenqiang Xiao
+        </div>
+      </div>
+
+      <div class="teaching-course">
+        <div class="teaching-course-title">
+          Decision Models — Summer 2026
+        </div>
+        <div class="teaching-course-meta">
+          Instructor: Jiawei Zhang
+        </div>
+      </div>
+
+      <div class="teaching-course">
+        <div class="teaching-course-title">
+          Microeconomics with Algebra / Calculus — Fall 2023, Fall 2024
+        </div>
+        <div class="teaching-course-meta">
+          Instructors: Simon Bowmaker, Tommaso Denti
+        </div>
+      </div>
+
+      <div class="teaching-course">
+        <div class="teaching-course-title">
+          Revenue Management &amp; Pricing — Spring 2023
+        </div>
+        <div class="teaching-course-meta">
+          Instructor: Gustavo Vulcano
+        </div>
+      </div>
+
+      <div class="teaching-course">
+        <div class="teaching-course-title">
+          Operations Management, UG Course — Fall 2023
+        </div>
+        <div class="teaching-course-meta">
+          Instructor: Divya Singhvi
+        </div>
+      </div>
+
+      <div class="teaching-course">
+        <div class="teaching-course-title">
+          Decision Under Risk — Fall 2022
+        </div>
+        <div class="teaching-course-meta">
+          Instructor: Gustavo Vulcano
+        </div>
+      </div>
+
+    </div>
+
+  </details>
 
 </div>
 
@@ -670,4 +688,26 @@ document.addEventListener("click", function (event) {
 
   history.replaceState(null, "", "/");
 }, true);
+</script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const more = document.getElementById("teaching-more");
+  const full = document.getElementById("teaching-full");
+
+  if (!more || !full) return;
+
+  more.addEventListener("click", function (event) {
+    event.preventDefault();
+    full.open = true;
+
+    full.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+
+    history.replaceState(null, "", "/");
+  });
+});
 </script>
